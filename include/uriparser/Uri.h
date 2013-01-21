@@ -191,8 +191,8 @@ typedef struct URI_TYPE(ParserStateStruct) {
  * @since 0.7.0
  */
 typedef struct URI_TYPE(QueryListStruct) {
-	const URI_CHAR * key; /**< Key of the query element */
-	const URI_CHAR * value; /**< Value of the query element, can be NULL */
+	URI_CHAR * key; /**< Key of the query element */
+	URI_CHAR * value; /**< Value of the query element, can be NULL */
 
 	struct URI_TYPE(QueryListStruct) * next; /**< Pointer to the next key/value pair in the list, can be NULL if last already */
 } URI_TYPE(QueryList); /**< @copydoc UriQueryListStructA */
